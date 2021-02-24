@@ -3,6 +3,9 @@
 ```bash
 # Build
 go build -o skeleton .
+
+# Format
+find ./ -name "*.go" | xargs gofmt -l -w
 ```
 
 > 目录结构

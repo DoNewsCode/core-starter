@@ -10,11 +10,16 @@ func main() {
 	// 启动基础, 将项目与 Core 连接
 	root, c := bootstrap.Bootstrap()
 
-	// 注册项目所需的一些东西
-	app.Modules(c)
+	// setup global dependencies
 	app.Providers(c)
 
-	// 添加一些 Command
+	// setup global modules
+	app.Modules(c)
+
+	// register global commands from modules
+	c.ApplyRootCommand(root)
+
+	// register custom command
 	root.AddCommand(cmd.NewVersionCmd(c))
 
 	// 运行

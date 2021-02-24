@@ -1,18 +1,18 @@
 package cmd
 
 import (
-    "fmt"
-    "github.com/DoNewsCode/core"
-    "github.com/spf13/cobra"
+	"fmt"
+	"github.com/DoNewsCode/core"
+	"github.com/spf13/cobra"
 )
 
 func NewVersionCmd(c *core.C) *cobra.Command {
-    var versionCmd = &cobra.Command{
-        Use:   "version",
-        Short: "Show the version number of this app",
-        Long:  `Under semantic versioning, version numbers and the way they change convey meaning about the underlying code and what has been modified from one version to the next.`,
-        Run: func(cmd *cobra.Command, args []string) {
-            fmt.Printf(`
+	var versionCmd = &cobra.Command{
+		Use:   "version",
+		Short: "Show the version number of this app",
+		Long:  `Under semantic versioning, version numbers and the way they change convey meaning about the underlying code and what has been modified from one version to the next.`,
+		Run: func(cmd *cobra.Command, args []string) {
+			fmt.Printf(`
  _____        _   _                   
 |  __ \      | \ | |                  
 | |  | | ___ |  \| | _____      _____ 
@@ -22,7 +22,7 @@ func NewVersionCmd(c *core.C) *cobra.Command {
 
 %s
 `, c.String("version"), c.String("name"))
-        },
-    }
-    return versionCmd
+		},
+	}
+	return versionCmd
 }
