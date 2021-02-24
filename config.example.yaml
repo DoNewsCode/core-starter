@@ -1,0 +1,82 @@
+# The name of the application
+name: "Core Skeleton"
+
+# The environment of the application, one of production, development, staging, testing or local
+env: local
+
+# The version of the application
+version: 0.1.0
+
+# The http address
+http:
+  addr: :8080
+
+# The gRPC address
+grpc:
+  addr: :9090
+
+# The configuration of redis clients
+redis:
+  default:
+    DB: 0
+    addrs:
+      - 127.0.0.1:6379
+    dialTimeout: 0
+    idleCheckFrequency: 0
+    idleTimeout: 0
+    masterName: ""
+    maxConnAge: 0
+    maxRedirects: 0
+    maxRetries: 0
+    maxRetryBackoff: 0
+    minIdleConns: 0
+    minRetryBackoff: 0
+    password: ""
+    poolSize: 0
+    poolTimeout: 0
+    readOnly: false
+    readTimeout: 0
+    routeByLatency: false
+    routeRandomly: false
+    sentinelPassword: ""
+    username: ""
+    writeTimeout: 0
+
+# The database configuration
+database:
+  default:
+    allowGlobalUpdate: false
+    createBatchSize: 0
+    database: mysql
+    disableAutomaticPing: false
+    disableForeignKeyConstraintWhenMigrating: false
+    disableNestedTransaction: false
+    dryRun: false
+    dsn: root@tcp(127.0.0.1:3306)/skeleton?charset=utf8mb4&parseTime=True&loc=Local
+    fullSaveAssociations: false
+    namingStrategy:
+      singularTable: false
+      tablePrefix: ""
+    prepareStmt: false
+    queryFields: false
+    skipDefaultTransaction: false
+
+# The s3 configuration
+s3:
+  default:
+    accessKey: ""
+    accessSecret: ""
+    bucket: ""
+    cdnUrl: ""
+    endpoint: ""
+    region: ""
+
+# The observability configuration
+jaeger:
+  reporter:
+    addr: null
+    log:
+      enable: false
+  sampler:
+    param: 1
+    type: const
