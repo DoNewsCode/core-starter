@@ -9,7 +9,11 @@ import (
 	"github.com/spf13/cobra"
 )
 
-func Bootstrap() (*cobra.Command, *core.C) {
+func Bootstrap(
+	providers func(c *core.C),
+	modules func(c *core.C),
+	commands ...func(c *core.C) *cobra.Command,
+) (*cobra.Command, func()) {
 	// setup rand seeder
 	rand.Seed(time.Now().UnixNano())
 
@@ -19,5 +23,21 @@ func Bootstrap() (*cobra.Command, *core.C) {
 	// setup core with config file path
 	c := core.Default(core.WithYamlFile(rootCmd.GetCfgPath()))
 
-	return rootCmd.Command, c
+	// setup global dependencies
+	providers(c)
+
+	// setup global modules
+	modules(c)
+
+	// register commands from modules
+	c.ApplyRootCommand(rootCmd.Command)
+
+	// register global commands
+	for _, command := range commands {
+		rootCmd.Command.AddCommand(command(c))
+	}
+
+	return rootCmd.Command, func() {
+		c.Shutdown()
+	}
 }
