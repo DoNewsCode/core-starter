@@ -7,7 +7,7 @@ import (
 )
 
 func NewVersionCmd(c *core.C) *cobra.Command {
-	var versionCmd = &cobra.Command{
+	return &cobra.Command{
 		Use:   "version",
 		Short: "Show the version number of this app",
 		Long:  `Under semantic versioning, version numbers and the way they change convey meaning about the underlying code and what has been modified from one version to the next.`,
@@ -24,5 +24,4 @@ func NewVersionCmd(c *core.C) *cobra.Command {
 `, c.String("version"), c.String("name"))
 		},
 	}
-	return versionCmd
 }
