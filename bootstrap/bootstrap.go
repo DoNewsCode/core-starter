@@ -1,39 +1,50 @@
 package bootstrap
 
 import (
-	"github.com/nfangxu/core-skeleton/cmd"
+	"fmt"
+	"github.com/nfangxu/core-skeleton/config"
 	"math/rand"
+	"reflect"
 	"time"
 
 	"github.com/DoNewsCode/core"
 	"github.com/spf13/cobra"
 )
 
-func Bootstrap(
-	providers func(c *core.C),
-	modules func(c *core.C),
-	commands ...func(c *core.C) *cobra.Command,
-) (*cobra.Command, func()) {
+func Bootstrap() (*cobra.Command, func()) {
 	// setup rand seeder
 	rand.Seed(time.Now().UnixNano())
 
 	// init rootCmd
-	rootCmd := cmd.NewRootCmd()
+	rootCmd := NewRootCmd()
 
 	// setup core with config file path
 	c := core.Default(core.WithYamlFile(rootCmd.GetCfgPath()))
 
 	// setup global dependencies
-	providers(c)
+	for _, provider := range config.Providers {
+		c.Provide(provider)
+	}
 
 	// setup global modules
-	modules(c)
+	for _, module := range config.Modules {
+		t := reflect.TypeOf(module)
+
+		switch true {
+		case t.Kind() == reflect.Func:
+			c.AddModuleFunc(module)
+		case t.Kind() == reflect.Struct:
+			c.AddModule(module)
+		default:
+			panic(fmt.Sprintf("Unexpected module [%s]", t.Kind()))
+		}
+	}
 
 	// register commands from modules
 	c.ApplyRootCommand(rootCmd.Command)
 
 	// register global commands
-	for _, command := range commands {
+	for _, command := range config.Commands {
 		rootCmd.Command.AddCommand(command(c))
 	}
 

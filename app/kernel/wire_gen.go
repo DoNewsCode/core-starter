@@ -3,7 +3,7 @@
 //go:generate wire
 //+build !wireinject
 
-package app
+package kernel
 
 import (
 	"github.com/DoNewsCode/core/contract"

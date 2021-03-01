@@ -1,6 +1,6 @@
 //+build wireinject
 
-package app
+package kernel
 
 import (
 	"github.com/DoNewsCode/core/contract"
@@ -8,9 +8,7 @@ import (
 )
 
 func InjectKernel(env contract.Env) (Kernel, error) {
-	panic(
-		wire.Build(
-			wire.Struct(new(Kernel), "*"),
-		),
-	)
+	panic(wire.Build(
+		kernelSet,
+	))
 }
