@@ -43,11 +43,6 @@ func Bootstrap() (*cobra.Command, func()) {
 	// register commands from modules
 	c.ApplyRootCommand(rootCmd.Command)
 
-	// register global commands
-	for _, command := range config.Commands {
-		rootCmd.Command.AddCommand(command(c))
-	}
-
 	return rootCmd.Command, func() {
 		c.Shutdown()
 	}

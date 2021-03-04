@@ -1,12 +1,12 @@
 package commands
 
 import (
-	"fmt"
-	"github.com/DoNewsCode/core"
-	"github.com/spf13/cobra"
+    "fmt"
+    "github.com/DoNewsCode/core/contract"
+    "github.com/spf13/cobra"
 )
 
-func NewVersionCmd(c *core.C) *cobra.Command {
+func NewVersionCommand(c contract.ConfigAccessor) *cobra.Command {
 	return &cobra.Command{
 		Use:   "version",
 		Short: "Show the version number of this app",
