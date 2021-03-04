@@ -1,5 +1,8 @@
 ### Skeleton
 
+[DoNewsCode/core](https://github.com/DoNewsCode/core) is a service container that elegantly bootstrap and coordinate twelve-factor apps in Go.
+This is a skeleton application using the [DoNewsCode/core](https://github.com/DoNewsCode/core) framework.
+
 ```bash
 # Export example config
 go run main.go config init -o config.example.yaml
