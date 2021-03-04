@@ -1,6 +1,9 @@
 ### Skeleton
 
 ```bash
+# Export example config
+go run main.go config init -o config.example.yaml
+
 # Generate
 go generate -x ./...
 
