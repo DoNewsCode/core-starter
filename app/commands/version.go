@@ -1,9 +1,9 @@
 package commands
 
 import (
-    "fmt"
-    "github.com/DoNewsCode/core/contract"
-    "github.com/spf13/cobra"
+	"fmt"
+	"github.com/DoNewsCode/core/contract"
+	"github.com/spf13/cobra"
 )
 
 func NewVersionCommand(c contract.ConfigAccessor) *cobra.Command {
