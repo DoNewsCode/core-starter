@@ -7,20 +7,20 @@ import (
 	"github.com/spf13/cobra"
 )
 
-func New(config contract.ConfigAccessor) Kernel {
-	return Kernel{config: config}
+func New(config contract.ConfigAccessor) Module {
+	return Module{config: config}
 }
 
 func Providers() di.Deps {
 	return []interface{}{}
 }
 
-type Kernel struct {
+type Module struct {
 	config contract.ConfigAccessor
 }
 
-func (k Kernel) ProvideCommand(command *cobra.Command) {
+func (m Module) ProvideCommand(command *cobra.Command) {
 	command.AddCommand(
-		commands.NewVersionCommand(k.config),
+		commands.NewVersionCommand(m.config),
 	)
 }
