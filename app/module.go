@@ -15,10 +15,10 @@ import (
 	"google.golang.org/grpc"
 )
 
-func New(config contract.ConfigAccessor, gin UserTransport) Module {
+func New(config contract.ConfigAccessor, user UserTransport) Module {
 	return Module{
 		config: config,
-		user:   gin,
+		user:   user,
 	}
 }
 
