@@ -3,21 +3,19 @@
 [DoNewsCode/core](https://github.com/DoNewsCode/core) is a service container that elegantly bootstrap and coordinate twelve-factor apps in Go.
 This is a skeleton application using the [DoNewsCode/core](https://github.com/DoNewsCode/core) framework.
 
+#### 使用
+
+[Gin Http Example](https://github.com/nfangxu/go-skeleton/tree/gin-http)
+
 ```bash
-# Export example config
-go run main.go config init -o config.example.yaml
+git clone https://github.com/nfangxu/go-skeleton.git {{YOUR_PROJECT_DIRECTORY}}
 
-# Generate
-go generate -x ./...
+cp config.example.yaml config.yaml
 
-# Build
-go build -o skeleton .
-
-# Format
-go fmt -x ./...
+go run main.go
 ```
 
-> 目录结构
+#### 目录结构
 
 ```
 ├── app                     # 主目录
@@ -36,4 +34,23 @@ go fmt -x ./...
 ├── go.sum                  # go module
 ├── main.go                 # 项目入口
 └── readme.md               # Readme
+```
+
+#### Help
+
+```bash
+# Export example config
+go run main.go config init -o config.example.yaml
+
+# Config
+cp config.example.yaml config.yaml
+
+# Generate
+go generate -x ./...
+
+# Build
+go build -o skeleton .
+
+# Format
+go fmt -x ./...
 ```
