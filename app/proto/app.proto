@@ -1,0 +1,63 @@
+syntax = "proto3";
+
+package app.v1;
+
+import "google/api/annotations.proto";
+import "protoc-gen-validate/validate/validate.proto";
+import "protoc-gen-openapiv2/options/annotations.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "app.pb";
+
+option (options.openapiv2_swagger) = {
+  info: {
+    title: "Skeleton";
+    version: "0.2.0";
+    contact: {
+      name: "developer";
+      email: "developer@donews.com";
+    };
+  };
+  base_path: "/v1"
+  security_definitions: {
+    security: {
+      key: "JWT",
+      value: {
+        type: TYPE_API_KEY
+        in: IN_HEADER
+        name: "Authorization"
+      }
+    }
+  }
+  security: {
+    security_requirement: {
+      key: "JWT";
+      value: {};
+    }
+  }
+  consumes: "application/json";
+  produces: "application/json";
+};
+
+service App {
+  rpc GetOne(GetOneUserRequest) returns (UserInfoReply) {
+    option (options.openapiv2_operation) = {
+      tags: "Users"
+    };
+    option (google.api.http) = {
+      get: "/users"
+    };
+  }
+}
+
+message GetOneUserRequest {
+  int32 id = 1 [
+    (validate.rules).int32.gt = 0
+  ];
+}
+
+message UserInfoReply {
+  int64 id = 1;
+  string name = 2;
+  string created_at = 3;
+}
