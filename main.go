@@ -12,7 +12,5 @@ func main() {
 	defer shutdown()
 
 	// Run
-	(func() {
-		_ = root.Execute()
-	})()
+	_ = root.Execute()
 }
