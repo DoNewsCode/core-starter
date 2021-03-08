@@ -24,6 +24,7 @@ go run main.go
 │   └── module.go           # 模块核心配置, 包括依赖注入的注册等
 ├── bootstrap               # 启动目录: 项目与 Core 框架核心关联
 │   ├── bootstrap.go        # 项目与 Core 的核心关联
+│   ├── bootstrap_test.go   # 测试
 │   └── root.go             # 项目根命令
 ├── config                  # 全局配置目录: 全局模块的注册和管理
 │   └── app.go              # 配置模块加载与命令加载等
