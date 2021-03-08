@@ -53,4 +53,7 @@ go build -o skeleton .
 
 # Format
 go fmt -x ./...
+
+# Test
+go test ./...
 ```
