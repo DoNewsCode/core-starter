@@ -2,10 +2,10 @@ package config
 
 import (
 	"github.com/DoNewsCode/core"
+	"github.com/DoNewsCode/core-skeleton/app"
 	"github.com/DoNewsCode/core/config"
 	"github.com/DoNewsCode/core/di"
 	"github.com/DoNewsCode/core/srvhttp"
-	"github.com/DoNewsCode/core-skeleton/app"
 )
 
 var (
@@ -20,5 +20,6 @@ var (
 		config.New,                  // config module
 		core.NewServeModule,         // server module
 		srvhttp.HealthCheckModule{}, // health check module (http demo)
+		srvhttp.DocsModule{},        // docs
 	}
 )
