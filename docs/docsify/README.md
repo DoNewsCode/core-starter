@@ -1,19 +1,7 @@
-### Skeleton
+### CoreStarter
 
 [DoNewsCode/core](https://github.com/DoNewsCode/core) is a service container that elegantly bootstrap and coordinate twelve-factor apps in Go.
-This is a skeleton application using the [DoNewsCode/core](https://github.com/DoNewsCode/core) framework.
-
-#### 使用
-
-[Gin Http Example](https://github.com/DoNewsCode/core-starter/tree/gin-http)
-
-```bash
-git clone https://github.com/DoNewsCode/core-starter.git {{YOUR_PROJECT_DIRECTORY}}
-
-cp config.example.yaml config.yaml
-
-go run main.go
-```
+This is a starter template using the [DoNewsCode/core](https://github.com/DoNewsCode/core) framework.
 
 #### 目录结构
 
@@ -28,6 +16,9 @@ go run main.go
 │   └── root.go             # 项目根命令
 ├── config                  # 全局配置目录: 全局模块的注册和管理
 │   └── app.go              # 配置模块加载与命令加载等
+├── docs                    # 文档目录
+│   ├── docsify             # Docsify 文档目录: 访问地址 {host:port}/docs/docsify
+│   └── swagger             # Swagger 文档目录: 访问地址 {host:port}/docs/swagger
 ├── .gitignore              # Git 忽略文件
 ├── config.example.yaml     # 示例配置文件
 ├── config.yaml             # 配置文件
@@ -36,6 +27,12 @@ go run main.go
 ├── main.go                 # 项目入口
 └── readme.md               # Readme
 ```
+
+#### Example
+
+[Gin Http Example](https://github.com/DoNewsCode/core-starter/tree/gin-http)
+
+[Go Kit Example](https://github.com/DoNewsCode/core-starter/tree/go-kit)
 
 #### Help
 

@@ -1,19 +1,7 @@
-### Skeleton
+### CoreStarter
 
 [DoNewsCode/core](https://github.com/DoNewsCode/core) is a service container that elegantly bootstrap and coordinate twelve-factor apps in Go.
-This is a skeleton application using the [DoNewsCode/core](https://github.com/DoNewsCode/core) framework.
-
-#### 使用
-
-[Gin Http Example](https://github.com/DoNewsCode/core-starter/tree/gin-http)
-
-```bash
-git clone https://github.com/DoNewsCode/core-starter.git {{YOUR_PROJECT_DIRECTORY}}
-
-cp config.example.yaml config.yaml
-
-go run main.go
-```
+This is a starter template using the [DoNewsCode/core](https://github.com/DoNewsCode/core) framework.
 
 #### 目录结构
 
@@ -39,6 +27,12 @@ go run main.go
 ├── main.go                 # 项目入口
 └── readme.md               # Readme
 ```
+
+#### Example
+
+[Gin Http Example](https://github.com/DoNewsCode/core-starter/tree/gin-http)
+
+[Go Kit Example](https://github.com/DoNewsCode/core-starter/tree/go-kit)
 
 #### Help
 
