@@ -1,4 +1,4 @@
-module github.com/DoNewsCode/core-skeleton
+module github.com/DoNewsCode/core-starter
 
 go 1.15
 

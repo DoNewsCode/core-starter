@@ -1,7 +1,7 @@
 package app
 
 import (
-	"github.com/DoNewsCode/core-skeleton/app/commands"
+	"github.com/DoNewsCode/core-starter/app/commands"
 	"github.com/DoNewsCode/core/contract"
 	"github.com/DoNewsCode/core/di"
 	"github.com/spf13/cobra"

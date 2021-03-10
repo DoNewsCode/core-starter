@@ -2,7 +2,7 @@ package config
 
 import (
 	"github.com/DoNewsCode/core"
-	"github.com/DoNewsCode/core-skeleton/app"
+	"github.com/DoNewsCode/core-starter/app"
 	"github.com/DoNewsCode/core/config"
 	"github.com/DoNewsCode/core/di"
 	"github.com/DoNewsCode/core/srvhttp"
