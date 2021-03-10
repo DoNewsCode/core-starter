@@ -5,7 +5,7 @@ import (
 	"github.com/DoNewsCode/core/config"
 	"github.com/DoNewsCode/core/di"
 	"github.com/DoNewsCode/core/srvhttp"
-	"github.com/nfangxu/core-skeleton/app"
+	"github.com/DoNewsCode/core-skeleton/app"
 )
 
 var (

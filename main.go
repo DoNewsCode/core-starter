@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/nfangxu/core-skeleton/bootstrap"
+	"github.com/DoNewsCode/core-skeleton/bootstrap"
 )
 
 func main() {

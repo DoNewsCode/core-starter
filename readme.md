@@ -5,10 +5,10 @@ This is a skeleton application using the [DoNewsCode/core](https://github.com/Do
 
 #### 使用
 
-[Gin Http Example](https://github.com/nfangxu/go-skeleton/tree/gin-http)
+[Gin Http Example](https://github.com/DoNewsCode/core-skeleton/tree/gin-http)
 
 ```bash
-git clone https://github.com/nfangxu/go-skeleton.git {{YOUR_PROJECT_DIRECTORY}}
+git clone https://github.com/DoNewsCode/core-skeleton.git {{YOUR_PROJECT_DIRECTORY}}
 
 cp config.example.yaml config.yaml
 
