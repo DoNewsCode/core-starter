@@ -1,7 +1,7 @@
 ### CoreStarter
 
 [DoNewsCode/core](https://github.com/DoNewsCode/core) is a service container that elegantly bootstrap and coordinate twelve-factor apps in Go.
-This is a starter template using the [DoNewsCode/core](https://github.com/DoNewsCode/core) framework.
+This is a starter template using the [DoNewsCode/core](https://github.com/DoNewsCode/core) framework. You can use the [fx](https://github.com/nfangxu/tools) command to quickly create a project
 
 #### 目录结构
 
