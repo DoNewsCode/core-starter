@@ -34,6 +34,8 @@ This is a starter template using the [DoNewsCode/core](https://github.com/DoNews
 
 [Go Kit Example](https://github.com/DoNewsCode/core-starter/tree/go-kit)
 
+[Kratos Example](https://github.com/DoNewsCode/core-starter/tree/kratos)
+
 #### Help
 
 ```bash
