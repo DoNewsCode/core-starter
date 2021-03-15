@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/nfangxu/core-skeleton/bootstrap"
+	"github.com/DoNewsCode/core-starter/bootstrap"
 )
 
 func main() {
@@ -12,7 +12,5 @@ func main() {
 	defer shutdown()
 
 	// Run
-	(func() {
-		_ = root.Execute()
-	})()
+	_ = root.Execute()
 }

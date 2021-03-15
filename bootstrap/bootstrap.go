@@ -2,7 +2,7 @@ package bootstrap
 
 import (
 	"fmt"
-	"github.com/nfangxu/core-skeleton/config"
+	"github.com/DoNewsCode/core-starter/config"
 	"math/rand"
 	"reflect"
 	"time"
