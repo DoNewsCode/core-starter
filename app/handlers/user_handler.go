@@ -1,9 +1,9 @@
 package handlers
 
 import (
+	"github.com/DoNewsCode/core-starter/app/repositories"
 	"github.com/DoNewsCode/core/srvhttp"
 	"github.com/gin-gonic/gin"
-	"github.com/nfangxu/core-skeleton/app/repositories"
 )
 
 func NewUserHandler(repository repositories.UserRepository) *UserHandler {
