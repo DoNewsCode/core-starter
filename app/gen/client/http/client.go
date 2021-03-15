@@ -24,8 +24,8 @@ import (
 	"github.com/pkg/errors"
 
 	// This Service
-	svc "github.com/nfangxu/core-skeleton/app/gen"
-	pb "github.com/nfangxu/core-skeleton/app/proto"
+	svc "github.com/DoNewsCode/core-starter/app/gen"
+	pb "github.com/DoNewsCode/core-starter/app/proto"
 )
 
 var (

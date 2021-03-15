@@ -2,8 +2,8 @@ package handlers
 
 import (
 	"context"
-	pb "github.com/nfangxu/core-skeleton/app/proto"
-	"github.com/nfangxu/core-skeleton/app/repositories"
+	pb "github.com/DoNewsCode/core-starter/app/proto"
+	"github.com/DoNewsCode/core-starter/app/repositories"
 )
 
 func NewUserHandler(repository repositories.UserRepository) *UserHandler {
