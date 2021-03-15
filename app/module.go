@@ -1,14 +1,14 @@
 package app
 
 import (
+	"github.com/DoNewsCode/core-starter/app/commands"
+	"github.com/DoNewsCode/core-starter/app/entities"
+	"github.com/DoNewsCode/core-starter/app/handlers"
+	"github.com/DoNewsCode/core-starter/app/repositories"
 	"github.com/DoNewsCode/core/contract"
 	"github.com/DoNewsCode/core/di"
 	"github.com/DoNewsCode/core/otgorm"
 	"github.com/gorilla/mux"
-	"github.com/nfangxu/core-skeleton/app/commands"
-	"github.com/nfangxu/core-skeleton/app/entities"
-	"github.com/nfangxu/core-skeleton/app/handlers"
-	"github.com/nfangxu/core-skeleton/app/repositories"
 	"github.com/spf13/cobra"
 )
 

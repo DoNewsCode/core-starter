@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"github.com/nfangxu/core-skeleton/app/entities"
+	"github.com/DoNewsCode/core-starter/app/entities"
 	"gorm.io/gorm"
 )
 

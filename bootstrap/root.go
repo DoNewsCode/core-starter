@@ -18,7 +18,7 @@ func NewRootCmd() RootCmd {
 	rootCmd.PersistentFlags().StringVar(
 		&cfgPath,
 		"config",
-		"config.yaml",
+		"./config.yaml",
 		"config file (default is ./config.yaml)",
 	)
 	_ = rootCmd.PersistentFlags().Parse(os.Args[1:])
