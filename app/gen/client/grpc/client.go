@@ -16,8 +16,8 @@ import (
 	grpctransport "github.com/go-kit/kit/transport/grpc"
 
 	// This Service
-	svc "github.com/nfangxu/core-skeleton/app/gen"
-	pb "github.com/nfangxu/core-skeleton/app/proto"
+	svc "github.com/DoNewsCode/core-starter/app/gen"
+	pb "github.com/DoNewsCode/core-starter/app/proto"
 )
 
 // New returns an service backed by a gRPC client connection. It is the

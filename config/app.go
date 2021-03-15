@@ -23,6 +23,6 @@ var (
 		core.NewServeModule,         // server module
 		srvhttp.HealthCheckModule{}, // health check module (http demo)
 		otgorm.New,
-		srvhttp.DocsModule{},        // docs
+		srvhttp.DocsModule{}, // docs
 	}
 )

@@ -29,7 +29,7 @@ import (
 	"github.com/pkg/errors"
 
 	// This service
-	pb "github.com/nfangxu/core-skeleton/app/proto"
+	pb "github.com/DoNewsCode/core-starter/app/proto"
 )
 
 const contentType = "application/json; charset=utf-8"
