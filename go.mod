@@ -3,7 +3,7 @@ module github.com/DoNewsCode/core-starter
 go 1.15
 
 require (
-	github.com/DoNewsCode/core v0.4.0-alpha.1
+	github.com/DoNewsCode/core v0.4.0-alpha.2
 	github.com/Reasno/ifilter v0.1.5 // indirect
 	github.com/spf13/cobra v1.1.3
 	golang.org/x/net v0.0.0-20210226172049-e18ecbb05110 // indirect

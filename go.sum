@@ -21,6 +21,8 @@ github.com/DoNewsCode/core v0.3.0 h1:tduTeNcqNVBIya1/Rsg+7VQWVcI0e51q+uTJMOylAQg
 github.com/DoNewsCode/core v0.3.0/go.mod h1:jDSr7/vd7mj2NfvVvGm7vF1bp4JfbPqpI7UJ/Nl7ndM=
 github.com/DoNewsCode/core v0.4.0-alpha.1 h1:dyzBIhxcX1h9M5DP2xeUGNe5j4Uhhsi5G72ByOkbIKQ=
 github.com/DoNewsCode/core v0.4.0-alpha.1/go.mod h1:YvCFX1mmE2F2ILM2oT8bSNOsgrXwzO00iY0tmPwI5xQ=
+github.com/DoNewsCode/core v0.4.0-alpha.2 h1:JN6CTFqw6M+rup1o2548TKQz4URmq3sxThN1huPao5w=
+github.com/DoNewsCode/core v0.4.0-alpha.2/go.mod h1:efa+gRnsNlY1lc8M7vM4eXOdjGXFXVSyZmjf7YW2bBA=
 github.com/HdrHistogram/hdrhistogram-go v1.0.1/go.mod h1:BWJ+nMSHY3L41Zj7CA3uXnloDp7xxV0YvstAE7nKTaM=
 github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
@@ -924,6 +926,7 @@ gopkg.in/yaml.v2 v2.2.8/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v2 v2.3.0/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v2 v2.4.0 h1:D8xgwECY7CYvx+Y2n4sBz93Jn9JRvxdiyyo8CTfuKaY=
 gopkg.in/yaml.v2 v2.4.0/go.mod h1:RDklbk79AGWmwhnvt/jBztapEOGDOx6ZbXqjP6csGnQ=
+gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c h1:dUUwHk2QECo/6vqA44rthZ8ie2QXMNeKRTHCNY2nXvo=
 gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
 gorm.io/driver/mysql v1.0.1/go.mod h1:KtqSthtg55lFp3S5kUXqlGaelnWpKitn4k1xZTnoiPw=
 gorm.io/driver/mysql v1.0.4 h1:TATTzt+kR+IV0+h3iUB3dHUe8omCvQ0rOkmfCsUBohk=
