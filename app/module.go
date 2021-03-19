@@ -21,6 +21,6 @@ type Module struct {
 
 func (m Module) ProvideCommand(command *cobra.Command) {
 	command.AddCommand(
-		commands.NewVersionCommand(m.config),
+		commands.NewExampleCommand(m.config),
 	)
 }

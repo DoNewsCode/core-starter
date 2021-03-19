@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/DoNewsCode/core-starter/bootstrap"
+	"github.com/DoNewsCode/core-starter/internal/bootstrap"
 )
 
 func main() {
