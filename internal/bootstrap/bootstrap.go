@@ -1,6 +1,7 @@
 package bootstrap
 
 import (
+	"github.com/DoNewsCode/core-starter/internal/cmd"
 	"math/rand"
 	"time"
 
@@ -13,11 +14,11 @@ func Bootstrap() (*cobra.Command, func()) {
 	// setup rand seeder
 	rand.Seed(time.Now().UnixNano())
 
-	// init rootCmd
-	rootCmd := NewRootCmd()
+	// init rootCmd and get config path
+	root, cfg := cmd.NewRootCmd()
 
 	// setup core with config file path
-	c := core.Default(core.WithYamlFile(rootCmd.GetCfgPath()))
+	c := core.Default(core.WithYamlFile(cfg))
 
 	// setup global dependencies
 	for _, option := range config.Register() {
@@ -25,9 +26,9 @@ func Bootstrap() (*cobra.Command, func()) {
 	}
 
 	// register commands from modules
-	c.ApplyRootCommand(rootCmd.Command)
+	c.ApplyRootCommand(root)
 
-	return rootCmd.Command, func() {
+	return root, func() {
 		c.Shutdown()
 	}
 }
