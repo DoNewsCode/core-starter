@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/DoNewsCode/core"
-	"github.com/DoNewsCode/core-starter/config"
+	"github.com/DoNewsCode/core-starter/internal/config"
 	"github.com/spf13/cobra"
 )
 
