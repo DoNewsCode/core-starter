@@ -20,7 +20,7 @@ fx create https://github.com/DoNewsCode/core-starter.git github.com/nfangxu/hell
 ```
 ├── app                         # 主目录
 │   ├── commands                # 命令目录: 存放所有的命令定义
-│   │   └── version.go          # 显示版本命令 (示例命令)
+│   │   └── example.go          # 示例命令
 │   └── module.go               # 模块核心配置, 包括依赖注入的注册等
 ├── docs                        # 文档目录
 │   ├── docsify                 # Docsify 文档目录: 访问地址 {host:port}/docs/docsify

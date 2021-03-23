@@ -12,7 +12,7 @@ func New(config contract.ConfigAccessor) Module {
 }
 
 func Providers() di.Deps {
-	return []interface{}{}
+	return di.Deps{}
 }
 
 type Module struct {

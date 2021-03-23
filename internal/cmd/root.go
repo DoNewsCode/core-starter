@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-var (
+const (
 	command = "root"
 	version = "v1.0.0"
 )
