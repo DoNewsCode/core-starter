@@ -12,10 +12,11 @@ This is a starter template using the [DoNewsCode/core](https://github.com/DoNews
 ├── app
 │   ├── commands
 │   │   └── example.go
-│   └── module.go
+│   └── module.go               # App module
 ├── docs
 │   ├── docsify                 # Docsify: {hostname:port}/docs/docsify
-│   └── swagger                 # Swagger Api: {hostname:port}/docs/swagger
+│   ├── swagger                 # Swagger Api: {hostname:port}/docs/swagger
+│   └── module.go               # Docs module
 ├── internal
 │   ├── bootstrap
 │   │   ├── bootstrap.go
