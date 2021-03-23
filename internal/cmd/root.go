@@ -10,6 +10,7 @@ const (
 	version = "v1.0.0"
 )
 
+// NewRootCmd Register the root command
 func NewRootCmd() (*cobra.Command, string) {
 	var cfgPath string
 

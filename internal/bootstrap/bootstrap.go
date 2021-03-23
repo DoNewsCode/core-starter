@@ -7,6 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
+// Bootstrap Project initiated
 func Bootstrap() (*cobra.Command, func()) {
 	// init rootCmd and get config path
 	root, cfg := cmd.NewRootCmd()

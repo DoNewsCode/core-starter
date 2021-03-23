@@ -7,6 +7,7 @@ import (
 	"github.com/DoNewsCode/core/srvhttp"
 )
 
+// Register the global options includes modules, module constructors and global dependencies
 func Register() []Option {
 	return []Option{
 		/* Dependencies */
