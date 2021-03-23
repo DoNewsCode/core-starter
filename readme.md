@@ -3,17 +3,8 @@
 [DoNewsCode/core](https://github.com/DoNewsCode/core) is a service container that elegantly bootstrap and coordinate twelve-factor apps in Go.
 This is a starter template using the [DoNewsCode/core](https://github.com/DoNewsCode/core) framework. 
 
-### Generate
-
-You can use the [fx](https://github.com/nfangxu/tools) command to quickly create a project
-
-```bash
-fx create helloworld
-# Or
-fx create https://github.com/DoNewsCode/core-starter.git helloworld
-# Or
-fx create https://github.com/DoNewsCode/core-starter.git github.com/nfangxu/helloworld
-```
+[![Go Report Card](https://goreportcard.com/badge/github.com/DoNewsCode/core-starter)](https://goreportcard.com/report/github.com/DoNewsCode/core-starter)
+[![Core Release](https://img.shields.io/github/release/DoNewsCode/core.svg)](https://github.com/DoNewsCode/core/releases/latest)
 
 ### Layouts
 
@@ -51,6 +42,18 @@ fx create https://github.com/DoNewsCode/core-starter.git github.com/nfangxu/hell
 
 [Kratos Example](https://github.com/DoNewsCode/core-starter/tree/kratos)
 
+### Generate
+
+You can use the [fx](https://github.com/nfangxu/tools) command to quickly create a project
+
+```bash
+fx create helloworld
+# Or
+fx create https://github.com/DoNewsCode/core-starter.git helloworld
+# Or
+fx create https://github.com/DoNewsCode/core-starter.git github.com/nfangxu/helloworld
+```
+
 #### Help
 
 ```bash
@@ -64,11 +67,14 @@ cp config.example.yaml config.yaml
 go generate -x ./...
 
 # Build
-go build -o skeleton .
+go build -o starter .
 
 # Format
 go fmt -x ./...
 
 # Test
 go test ./...
+
+# lint
+golint ./...
 ```
