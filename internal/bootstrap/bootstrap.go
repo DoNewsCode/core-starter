@@ -8,10 +8,10 @@ import (
 	"os"
 )
 
-var cfg string
-
 // Bootstrap Project initiated
 func Bootstrap() (*cobra.Command, func()) {
+	var cfg string
+
 	// Get root command
 	root := cmd.NewRootCmd()
 
@@ -22,7 +22,7 @@ func Bootstrap() (*cobra.Command, func()) {
 	// Setup core with config path
 	c := core.Default(core.WithYamlFile(cfg))
 
-	// Setup global dependencies and re
+	// Setup global dependencies and register modules
 	for _, option := range config.Register() {
 		option(c)
 	}
