@@ -16,6 +16,8 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/DoNewsCode/core v0.4.0 h1:UWpIeR0PfL0S8HoERDIew3vuXdmaLdISinWxOceaZo0=
 github.com/DoNewsCode/core v0.4.0/go.mod h1:efa+gRnsNlY1lc8M7vM4eXOdjGXFXVSyZmjf7YW2bBA=
+github.com/DoNewsCode/core v0.4.1 h1:lwGY7/mB+9YG45L34N7QLFbFV5FpeyPQ9JJVse9Ze6M=
+github.com/DoNewsCode/core v0.4.1/go.mod h1:efa+gRnsNlY1lc8M7vM4eXOdjGXFXVSyZmjf7YW2bBA=
 github.com/HdrHistogram/hdrhistogram-go v1.0.1/go.mod h1:BWJ+nMSHY3L41Zj7CA3uXnloDp7xxV0YvstAE7nKTaM=
 github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
