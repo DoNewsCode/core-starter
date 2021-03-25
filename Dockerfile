@@ -1,5 +1,5 @@
 # Start from golang v1.15 base image
-FROM golang:1.16 as builder
+FROM golang:1.16.2 as builder
 
 ENV GO111MODULE on
 ENV GOPROXY https://goproxy.cn,direct
@@ -28,7 +28,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 WORKDIR /root/
 
 # Copy the Pre-built binary file from the previous stage
-COPY configs configs
+COPY config.example.yaml config.yaml
 COPY docs docs
 COPY --from=builder /go/bin/starter .
 
@@ -36,4 +36,4 @@ EXPOSE 8080 9090
 
 ENTRYPOINT ["./starter"]
 
-CMD ["serve", "--config=./configs/config.yaml"]
+CMD ["serve", "--config=./config.yaml"]
