@@ -4,6 +4,7 @@ import (
 	"github.com/DoNewsCode/core-starter/internal/bootstrap"
 	"math/rand"
 	"time"
+	"log"
 )
 
 func main() {
@@ -17,5 +18,7 @@ func main() {
 	defer shutdown()
 
 	// Run
-	_ = root.Execute()
+	if err := root.Execute(); err != nil {
+		log.Fatal(err)
+	}
 }
