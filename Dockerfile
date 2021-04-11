@@ -8,7 +8,7 @@ ENV GOSUMDB sum.golang.google.cn
 WORKDIR /root/
 
 # Get dependancies - will also be cached if we won't change mod/sum
-COPY go.* .
+COPY go.* ./
 RUN go mod download
 
 # Copy everything from the current directory to the PWD(Present Working Directory) inside the container
