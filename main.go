@@ -2,9 +2,9 @@ package main
 
 import (
 	"github.com/DoNewsCode/core-starter/internal/bootstrap"
+	"log"
 	"math/rand"
 	"time"
-	"log"
 )
 
 func main() {
