@@ -2,27 +2,49 @@ package app
 
 import (
 	"github.com/DoNewsCode/core-starter/app/commands"
+	"github.com/DoNewsCode/core-starter/app/entities"
+	"github.com/DoNewsCode/core-starter/app/handlers"
+	"github.com/DoNewsCode/core-starter/app/repositories"
 	"github.com/DoNewsCode/core/contract"
 	"github.com/DoNewsCode/core/di"
+	"github.com/DoNewsCode/core/otgorm"
+	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
 )
 
-// New Create a new module
-func New(config contract.ConfigAccessor) Module {
-	return Module{config: config}
+func New(config contract.ConfigAccessor, gin GinTransport) Module {
+	return Module{
+		config: config,
+		gin:    gin,
+	}
 }
 
-// Providers Register the dependencies of this module
 func Providers() di.Deps {
-	return di.Deps{}
+	return di.Deps{
+		repositories.NewUserRepository,
+		handlers.NewUserHandler,
+		handlers.NewHandlers,
+		NewGinTransport,
+	}
 }
 
-// Module is a main file
 type Module struct {
 	config contract.ConfigAccessor
+	gin    GinTransport
 }
 
-// ProvideCommand Marks that this module provides some commands
+func (m Module) ProvideSeed() []*otgorm.Seed {
+	return entities.Seeders()
+}
+
+func (m Module) ProvideMigration() []*otgorm.Migration {
+	return entities.Migrations()
+}
+
+func (m Module) ProvideHTTP(router *mux.Router) {
+	router.PathPrefix("/").Handler(m.gin)
+}
+
 func (m Module) ProvideCommand(command *cobra.Command) {
 	command.AddCommand(
 		commands.NewExampleCommand(m.config),
