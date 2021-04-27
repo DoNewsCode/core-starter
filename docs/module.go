@@ -9,11 +9,6 @@ import (
 //go:embed swagger docsify
 var docs embed.FS
 
-// New Create a new module
-func New() Module {
-	return Module{}
-}
-
 // Module is a main file
 type Module struct {
 }

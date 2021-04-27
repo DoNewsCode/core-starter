@@ -19,7 +19,6 @@ func Register() []Option {
 		/* Module Constructors */
 		Constructors(
 			app.New,
-			docs.New,            // docs
 			config.New,          // config module
 			core.NewServeModule, // server module
 		),
@@ -27,6 +26,7 @@ func Register() []Option {
 		/* Modules */
 		Modules(
 			srvhttp.HealthCheckModule{}, // health check module (http demo)
+			docs.Module{},
 		),
 	}
 }
