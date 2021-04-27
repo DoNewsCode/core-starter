@@ -1,58 +1,30 @@
-//go:generate trs proto/app.proto --doc=../docs/ --lib=../proto-lib --svcout=.
 package app
 
 import (
 	"github.com/DoNewsCode/core-starter/app/commands"
-	"github.com/DoNewsCode/core-starter/app/entities"
-	"github.com/DoNewsCode/core-starter/app/handlers"
-	pb "github.com/DoNewsCode/core-starter/app/proto"
-	"github.com/DoNewsCode/core-starter/app/repositories"
 	"github.com/DoNewsCode/core/contract"
 	"github.com/DoNewsCode/core/di"
-	"github.com/DoNewsCode/core/otgorm"
-	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
-	"google.golang.org/grpc"
 )
 
-func New(config contract.ConfigAccessor, user UserTransport) Module {
-	return Module{
-		config: config,
-		user:   user,
-	}
+// New Create a new module
+func New(config contract.ConfigAccessor) Module {
+	return Module{config: config}
 }
 
+// Providers Register the dependencies of this module
 func Providers() di.Deps {
-	return []interface{}{
-		repositories.NewUserRepository,
-		handlers.NewUserHandler,
-		NewUserTransport,
-	}
+	return di.Deps{}
 }
 
+// Module is a main file
 type Module struct {
 	config contract.ConfigAccessor
-	user   UserTransport
 }
 
-func (m Module) ProvideGRPC(server *grpc.Server) {
-	pb.RegisterAppServer(server, m.user)
-}
-
-func (m Module) ProvideSeed() []*otgorm.Seed {
-	return entities.Seeders()
-}
-
-func (m Module) ProvideMigration() []*otgorm.Migration {
-	return entities.Migrations()
-}
-
-func (m Module) ProvideHTTP(router *mux.Router) {
-	router.PathPrefix("/").Handler(m.user)
-}
-
+// ProvideCommand Marks that this module provides some commands
 func (m Module) ProvideCommand(command *cobra.Command) {
 	command.AddCommand(
-		commands.NewVersionCommand(m.config),
+		commands.NewExampleCommand(m.config),
 	)
 }

@@ -1,10 +1,16 @@
 package main
 
 import (
-	"github.com/DoNewsCode/core-starter/bootstrap"
+	"github.com/DoNewsCode/core-starter/internal/bootstrap"
+	"log"
+	"math/rand"
+	"time"
 )
 
 func main() {
+	// setup rand seeder
+	rand.Seed(time.Now().UnixNano())
+
 	// Core Bootstrap
 	root, shutdown := bootstrap.Bootstrap()
 
@@ -12,5 +18,7 @@ func main() {
 	defer shutdown()
 
 	// Run
-	_ = root.Execute()
+	if err := root.Execute(); err != nil {
+		log.Fatal(err)
+	}
 }
