@@ -20,3 +20,6 @@ log:
   format: logfmt
   level: debug
 
+# The cron job runner
+cron:
+    disable: false
