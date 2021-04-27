@@ -5,6 +5,7 @@ import (
 	"github.com/DoNewsCode/core-starter/app"
 	"github.com/DoNewsCode/core-starter/docs"
 	"github.com/DoNewsCode/core/config"
+	"github.com/DoNewsCode/core/otgorm"
 	"github.com/DoNewsCode/core/srvhttp"
 )
 
@@ -14,6 +15,7 @@ func Register() []Option {
 		/* Dependencies */
 		Dependencies(
 			app.Providers(),
+			otgorm.Providers(),
 		),
 
 		/* Module Constructors */
@@ -22,6 +24,7 @@ func Register() []Option {
 			docs.New,            // docs
 			config.New,          // config module
 			core.NewServeModule, // server module
+			otgorm.New,
 		),
 
 		/* Modules */
