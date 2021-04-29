@@ -28,6 +28,8 @@ github.com/DoNewsCode/core v0.4.1 h1:lwGY7/mB+9YG45L34N7QLFbFV5FpeyPQ9JJVse9Ze6M
 github.com/DoNewsCode/core v0.4.1/go.mod h1:efa+gRnsNlY1lc8M7vM4eXOdjGXFXVSyZmjf7YW2bBA=
 github.com/DoNewsCode/core v0.4.2 h1:n7ASeecWkwbExTZp59aPTzom2uBv3TdGYG9nHkETgWs=
 github.com/DoNewsCode/core v0.4.2/go.mod h1:efa+gRnsNlY1lc8M7vM4eXOdjGXFXVSyZmjf7YW2bBA=
+github.com/DoNewsCode/core v0.5.0 h1:K+xx5bOcF2tIKq05Gkoq0hgk7vHy92xilvOCq77UVxM=
+github.com/DoNewsCode/core v0.5.0/go.mod h1:94PWH+7x/PGM8Bw2BssI8zQ+jMRYZQVm08ZhOT2flPU=
 github.com/HdrHistogram/hdrhistogram-go v1.0.1 h1:GX8GAYDuhlFQnI2fRDHQhTlkHMz8bEn0jTI6LJU0mpw=
 github.com/HdrHistogram/hdrhistogram-go v1.0.1/go.mod h1:BWJ+nMSHY3L41Zj7CA3uXnloDp7xxV0YvstAE7nKTaM=
 github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible h1:1G1pk05UrOh0NlF1oeaaix1x8XzrfjIDK47TY0Zehcw=
@@ -263,6 +265,7 @@ github.com/golang/mock v1.1.1/go.mod h1:oTYuIxOrZwtPieC+H1uAHpcLFnEyAGVDL/k47Jfb
 github.com/golang/mock v1.2.0/go.mod h1:oTYuIxOrZwtPieC+H1uAHpcLFnEyAGVDL/k47Jfbm0A=
 github.com/golang/mock v1.3.1 h1:qGJ6qTW+x6xX/my+8YUVl4WNpX9B7+/l2tRsHGZ7f2s=
 github.com/golang/mock v1.3.1/go.mod h1:sBzyDLLjw3U8JLTeZvSv8jJB+tU5PVekmnlKIyFUx0Y=
+github.com/golang/mock v1.5.0/go.mod h1:CWnOUgYIOo4TcNZ0wHX3YZCqsaM1I1Jvs6v3mP3KVu8=
 github.com/golang/protobuf v1.2.0/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
 github.com/golang/protobuf v1.3.1/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
 github.com/golang/protobuf v1.3.2/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
