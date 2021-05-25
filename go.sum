@@ -32,6 +32,8 @@ github.com/DoNewsCode/core v0.5.0 h1:K+xx5bOcF2tIKq05Gkoq0hgk7vHy92xilvOCq77UVxM
 github.com/DoNewsCode/core v0.5.0/go.mod h1:94PWH+7x/PGM8Bw2BssI8zQ+jMRYZQVm08ZhOT2flPU=
 github.com/DoNewsCode/core v0.6.0 h1:R5MsCCPlmsKXTtddU6tIfI2heBKphD41u4SJoBx2eCk=
 github.com/DoNewsCode/core v0.6.0/go.mod h1:cAOJJI9FT+wQDhqb7LTS1BQDEy5W67FM/1W2UM2L92c=
+github.com/DoNewsCode/core v0.6.1 h1:kBCxOJ19FUjOtoxQZ8fp/4+lgt/CDdcZjcgWJQbj1IY=
+github.com/DoNewsCode/core v0.6.1/go.mod h1:cAOJJI9FT+wQDhqb7LTS1BQDEy5W67FM/1W2UM2L92c=
 github.com/HdrHistogram/hdrhistogram-go v1.0.1 h1:GX8GAYDuhlFQnI2fRDHQhTlkHMz8bEn0jTI6LJU0mpw=
 github.com/HdrHistogram/hdrhistogram-go v1.0.1/go.mod h1:BWJ+nMSHY3L41Zj7CA3uXnloDp7xxV0YvstAE7nKTaM=
 github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible h1:1G1pk05UrOh0NlF1oeaaix1x8XzrfjIDK47TY0Zehcw=
