@@ -2,13 +2,20 @@ package main
 
 import (
 	"github.com/DoNewsCode/core-starter/internal/bootstrap"
+	"log"
 	"math/rand"
 	"time"
-	"log"
 )
 
 func main() {
-	// setup rand seeder
+	// Recover panic
+	defer func() {
+		if err := recover(); err != nil {
+			log.Printf("panic(%v) \n", err)
+		}
+	}()
+
+	// Setup rand seeder
 	rand.Seed(time.Now().UnixNano())
 
 	// Core Bootstrap
