@@ -18,7 +18,7 @@ COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o /go/bin/starter
 
 ######## Start a new stage from alpine:3.13 #######
-FROM alpine:3.13
+FROM alpine:3.14
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/' /etc/apk/repositories
 RUN apk add ca-certificates tzdata
