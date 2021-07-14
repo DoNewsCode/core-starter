@@ -7,22 +7,22 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// New Create a new module
+// New is the constructor of the app module.
 func New(config contract.ConfigAccessor) Module {
 	return Module{config: config}
 }
 
-// Providers Register the dependencies of this module
+// Providers registers the dependencies provided by the app module (so that other modules can consume them).
 func Providers() di.Deps {
 	return di.Deps{}
 }
 
-// Module is a main file
+// Module is the struct representing the app Module.
 type Module struct {
 	config contract.ConfigAccessor
 }
 
-// ProvideCommand Marks that this module provides some commands
+// ProvideCommand implements container.CommandProvider
 func (m Module) ProvideCommand(command *cobra.Command) {
 	command.AddCommand(
 		commands.NewExampleCommand(m.config),

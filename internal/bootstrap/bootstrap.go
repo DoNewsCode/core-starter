@@ -8,7 +8,8 @@ import (
 	"os"
 )
 
-// Bootstrap Project initiated
+// Bootstrap connects the the dependency graph of the project, 
+// and returns the root command and its closer for execution.
 func Bootstrap() (*cobra.Command, func()) {
 	var cfg string
 

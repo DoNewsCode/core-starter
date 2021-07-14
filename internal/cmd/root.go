@@ -9,7 +9,7 @@ const (
 	version = "v1.0.0"
 )
 
-// NewRootCmd Define the root command
+// NewRootCmd returns the root command.
 func NewRootCmd() *cobra.Command {
 	return &cobra.Command{
 		Use:     command,
