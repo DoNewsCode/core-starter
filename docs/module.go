@@ -9,7 +9,7 @@ import (
 //go:embed swagger docsify
 var docs embed.FS
 
-// Module is a main file
+// Module is a struct that represents the docs module.
 type Module struct {
 }
 

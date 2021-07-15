@@ -19,7 +19,7 @@ func Register() []Option {
 		/* Modules */
 		Modules(
 			srvhttp.HealthCheckModule{}, // health check module (http demo)
-			docs.Module{},
+			docs.Module{}, // docs module
 		),
 
 		/* Module Constructors */

@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// NewExampleCommand Register a example command
+// NewExampleCommand Registers a example command
 func NewExampleCommand(c contract.ConfigAccessor) *cobra.Command {
 	return &cobra.Command{
 		Use:   "example",
