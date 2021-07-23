@@ -8,13 +8,13 @@ import (
 	"os"
 )
 
-// Bootstrap connects the the dependency graph of the project, 
+// Bootstrap connects the the dependency graph of the project,
 // and returns the root command and its closer for execution.
-func Bootstrap() (*cobra.Command, func()) {
+func Bootstrap(name, version string) (*cobra.Command, func()) {
 	var cfg string
 
 	// Get root command
-	root := cmd.NewRootCmd()
+	root := cmd.NewRootCmd(name, version)
 
 	// Determine config path from commandline
 	root.PersistentFlags().StringVar(&cfg, "config", "./config.yaml", "config file")

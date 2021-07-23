@@ -7,12 +7,17 @@ import (
 	"time"
 )
 
+var (
+	Name    = "starter"
+	Version = "v1.0.0"
+)
+
 func main() {
 	// setup rand seeder
 	rand.Seed(time.Now().UnixNano())
 
 	// Core Bootstrap
-	root, shutdown := bootstrap.Bootstrap()
+	root, shutdown := bootstrap.Bootstrap(Name, Version)
 
 	// Shutdown
 	defer shutdown()
