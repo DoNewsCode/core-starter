@@ -15,7 +15,7 @@ RUN go mod download
 COPY . .
 
 # Build the Go app
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o /go/bin/starter
+RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-X 'main.Version=$(git show -s --format=%h)'" -a -installsuffix cgo -o /go/bin/starter
 
 ######## Start a new stage from alpine:3.13 #######
 FROM alpine:3.14

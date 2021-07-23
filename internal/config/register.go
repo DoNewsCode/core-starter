@@ -15,11 +15,11 @@ func Register() []Option {
 		Dependencies(
 			app.Providers(),
 		),
-		
+
 		/* Modules */
 		Modules(
 			srvhttp.HealthCheckModule{}, // health check module (http demo)
-			docs.Module{}, // docs module
+			docs.Module{},               // docs module
 		),
 
 		/* Module Constructors */

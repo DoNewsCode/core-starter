@@ -13,6 +13,6 @@ func TestBootstrap(t *testing.T) {
 	}()
 
 	os.Args = []string{"", "--config", "../../config.example.yaml"}
-	_, shutdown := Bootstrap()
+	_, shutdown := Bootstrap("foo", "bar")
 	shutdown()
 }
