@@ -30,7 +30,6 @@ WORKDIR /root/
 
 # Copy the Pre-built binary file from the previous stage
 COPY config.example.yaml config.yaml
-COPY docs docs
 COPY --from=builder /go/bin/starter .
 
 EXPOSE 8080 9090
