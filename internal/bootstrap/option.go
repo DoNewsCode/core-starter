@@ -1,4 +1,4 @@
-package config
+package bootstrap
 
 import "github.com/DoNewsCode/core/di"
 
