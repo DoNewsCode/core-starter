@@ -2,8 +2,6 @@ package bootstrap
 
 import (
 	"github.com/DoNewsCode/core"
-	"github.com/DoNewsCode/core-starter/internal/cmd"
-	"github.com/DoNewsCode/core-starter/internal/config"
 	"github.com/spf13/cobra"
 	"os"
 )
@@ -14,7 +12,7 @@ func Bootstrap(name, version string) (*cobra.Command, func()) {
 	var cfg string
 
 	// Get root command
-	root := cmd.NewRootCmd(name, version)
+	root := NewRootCmd(name, version)
 
 	// Determine config path from commandline
 	root.PersistentFlags().StringVar(&cfg, "config", "./config.yaml", "config file")
@@ -24,7 +22,7 @@ func Bootstrap(name, version string) (*cobra.Command, func()) {
 	c := core.Default(core.WithYamlFile(cfg))
 
 	// Setup global dependencies and register modules
-	for _, option := range config.Register() {
+	for _, option := range Register() {
 		option(c)
 	}
 

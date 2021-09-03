@@ -49,12 +49,10 @@ When you add other modules, you can use the `go run main.go config init -o confi
 │   ├── swagger                 # Swagger Api: {hostname:port}/docs/swagger
 │   └── module.go               # Docs module
 ├── internal
-│   ├── bootstrap
-│   │   ├── bootstrap.go
-│   │   ├── bootstrap_test.go
-│   ├── cmd
-│   │   └── root.go
-│   └── config
+│   └── bootstrap
+│       ├── bootstrap.go
+│       ├── bootstrap_test.go
+│       ├── root.go
 │       ├── option.go
 │       └── register.go         # Register global module or dependency
 ├── .gitignore
