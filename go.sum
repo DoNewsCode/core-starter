@@ -46,6 +46,8 @@ github.com/DoNewsCode/core v0.7.3 h1:aGAmhK8Tpgzo0W6x7AX/8qYF0SlWssGHUdnx+4s8Tas
 github.com/DoNewsCode/core v0.7.3/go.mod h1:8TZ+oF2kIxPAAHcE30T4AA5GA2Mqxa7j8JAtai0mOjM=
 github.com/DoNewsCode/core v0.8.0 h1:zR3PBP/uvUQcZHJ/OCxlLIRUk3zCgKR2SLcouVRTGC8=
 github.com/DoNewsCode/core v0.8.0/go.mod h1:eFiG0xU2be4NfgceZRI+lPmYUQeflZvK0tRR5CSk9jk=
+github.com/DoNewsCode/core v0.9.0 h1:O7Wu69cfA9mKZdLxRXT9u0zNaR/AgxFc/qG1epiAgCg=
+github.com/DoNewsCode/core v0.9.0/go.mod h1:XXq48g0t3QG0czqtuqtIU72Lc56Na9sK094Zd4imIrg=
 github.com/HdrHistogram/hdrhistogram-go v1.0.1/go.mod h1:BWJ+nMSHY3L41Zj7CA3uXnloDp7xxV0YvstAE7nKTaM=
 github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
 github.com/Masterminds/semver/v3 v3.1.1/go.mod h1:VPu/7SZ7ePZ3QOrcuXROw5FAcLl4a0cBrbBpGY/8hQs=
@@ -561,6 +563,7 @@ github.com/onsi/gomega v1.10.5/go.mod h1:gza4q3jKQJijlu05nKWRCW/GavJumGt8aNRxWg7
 github.com/op/go-logging v0.0.0-20160315200505-970db520ece7/go.mod h1:HzydrMdWErDVzsI23lYNej1Htcns9BCg93Dk0bBINWk=
 github.com/opentracing-contrib/go-grpc v0.0.0-20210225150812-73cb765af46e/go.mod h1:DYR5Eij8rJl8h7gblRrOZ8g0kW1umSpKqYIBTgeDtLo=
 github.com/opentracing-contrib/go-observer v0.0.0-20170622124052-a52f23424492/go.mod h1:Ngi6UdF0k5OKD5t5wlmGhe/EDKPoUM3BXZSSfIuJbis=
+github.com/opentracing-contrib/go-stdlib v1.0.0 h1:TBS7YuVotp8myLon4Pv7BtCBzOTo1DeZCld0Z63mW2w=
 github.com/opentracing-contrib/go-stdlib v1.0.0/go.mod h1:qtI1ogk+2JhVPIXVc6q+NHziSmy2W5GbdQZFUHADCBU=
 github.com/opentracing/basictracer-go v1.0.0/go.mod h1:QfBfYuafItcjQuMwinw9GhYKwFXS9KnPs5lxoYwgW74=
 github.com/opentracing/opentracing-go v1.0.2/go.mod h1:UkNAQd3GIcIGf0SeVgPpRdFStlNbqXla1AfSYxPUl2o=
