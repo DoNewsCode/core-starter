@@ -1,4 +1,4 @@
-# Start from golang v1.16.3 base image
+# Start from golang base image
 FROM golang:1.17.5 as builder
 
 ENV GO111MODULE on
