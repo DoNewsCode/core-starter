@@ -3,7 +3,7 @@ module github.com/DoNewsCode/core-starter
 go 1.17
 
 require (
-	github.com/DoNewsCode/core v0.11.1
+	github.com/DoNewsCode/core v0.12.0
 	github.com/gorilla/mux v1.8.0
 	github.com/spf13/cobra v1.3.0
 )
@@ -20,9 +20,11 @@ require (
 	github.com/gorilla/handlers v1.5.1 // indirect
 	github.com/heptiolabs/healthcheck v0.0.0-20180807145615-6ff867650f40 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
-	github.com/knadh/koanf v0.15.0 // indirect
+	github.com/knadh/koanf v1.4.0 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
+	github.com/mitchellh/copystructure v1.2.0 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
+	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/oklog/run v1.1.0 // indirect
 	github.com/opentracing-contrib/go-stdlib v1.0.0 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
