@@ -8,7 +8,7 @@ type Option func(c Core)
 // Core the application core interface
 type Core interface {
 	Provide(deps di.Deps)
-	AddModule(modules ...interface{})
+	AddModule(module interface{})
 	AddModuleFunc(constructor interface{})
 }
 
