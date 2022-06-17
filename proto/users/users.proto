@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+package api.users.v1;
+
+import "google/api/annotations.proto";
+import "protoc-gen-validate/validate/validate.proto";
+import "protoc-gen-openapiv2/options/annotations.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/DoNewsCode/core-starter/api/users;users";
+
+option (options.openapiv2_swagger) = {
+  info: {
+    title: "CodeStarter with Kratos";
+    version: "v1.0.0";
+    contact: {
+      name: "江湖大牛";
+      email: "nfangxu@gmail.com";
+    };
+  };
+  base_path: "/users"
+  consumes: "application/json";
+  produces: "application/json";
+  external_docs: {
+    description: "CoreStarter"
+    url: "https://github.com/DoNewsCode/core-starter"
+  }
+};
+
+
+service Users {
+  rpc Login(LoginReq) returns (Rep) {
+    option (options.openapiv2_operation) = {
+      tags: "Users"
+    };
+    option (google.api.http) = {
+      post: "/login"
+      body: "*"
+    };
+
+  }
+  rpc GetCode(GetCodeReq) returns (Rep) {
+    option (options.openapiv2_operation) = {
+      tags: "Users"
+    };
+    option (google.api.http) = {
+      get: "/code"
+    };
+  }
+}
+
+message LoginReq {
+  // 手机号
+  string mobile = 1 [
+    (validate.rules).string.pattern = "(^$|^[\\d]{11}$)",
+    (options.openapiv2_field) = {pattern: "(^$|^[\\d]{11}$)"}
+  ];
+  // 手机验证码
+  string code = 2;
+}
+
+message GetCodeReq {
+  // 手机号
+  string mobile = 1 [
+    (validate.rules).string.pattern = "(^$|^[\\d]{11}$)",
+    (options.openapiv2_field) = {pattern: "(^$|^[\\d]{11}$)"}
+  ];
+}
+
+message Rep {
+  int32 code = 1 [(gogoproto.jsontag) = "code"];
+  string msg = 2;
+}
+

@@ -4,12 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Swagger UI</title>
-    <link rel="stylesheet" type="text/css"
-          href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@3.52.0/swagger-ui.min.css"/>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@3.52.0/favicon-32x32.png"
-          sizes="32x32"/>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@3.52.0/favicon-16x16.png"
-          sizes="16x16"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@4.12.0/swagger-ui.min.css"/>
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@4.12.0/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@4.12.0/favicon-16x16.png" sizes="16x16"/>
     <style>
         html {
             box-sizing: border-box;
@@ -32,8 +29,8 @@
 
 <body>
 <div id="swagger-ui"></div>
-<script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@3.52.0/swagger-ui-bundle.min.js" charset="UTF-8"></script>
-<script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@3.52.0/swagger-ui-standalone-preset.min.js" charset="UTF-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@4.12.0/swagger-ui-bundle.min.js" charset="UTF-8"></script>
+<script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@4.12.0/swagger-ui-standalone-preset.min.js" charset="UTF-8"></script>
 <script>
     // https://swagger.io/docs/open-source-tools/swagger-ui/usage/configuration/
     window.onload = function () {
@@ -41,8 +38,8 @@
         const ui = SwaggerUIBundle({
             urls: [
                 {
-                    url: "app.swagger.json",
-                    name: "Default"
+                    url: "proto/users/users.swagger.json",
+                    name: "Users"
                 }
             ],
             dom_id: '#swagger-ui',
