@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/DoNewsCode/core v0.12.3
 	github.com/gorilla/mux v1.8.0
-	github.com/spf13/cobra v1.4.0
+	github.com/spf13/cobra v1.5.0
 )
 
 require (
