@@ -1,10 +1,6 @@
 # The environment of the application, one of production, development, staging, testing or local
 env: local
 
-# The gRPC address
-grpc:
-  addr: :9090
-
 # The name of the application
 name: app
 
@@ -15,11 +11,15 @@ version: 0.1.0
 http:
   addr: :8080
 
+# The gRPC address
+grpc:
+  addr: :9090
+
 # The global logging level and format
 log:
-  format: logfmt
+  format: json
   level: debug
 
 # The cron job runner
 cron:
-    disable: false
+  disable: false
