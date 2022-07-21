@@ -1,6 +1,6 @@
 module github.com/DoNewsCode/core-starter
 
-go 1.17
+go 1.18
 
 require (
 	github.com/DoNewsCode/core v0.12.3
