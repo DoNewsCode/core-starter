@@ -1,5 +1,5 @@
 # Start from golang base image
-FROM golang:1.19.2 as builder
+FROM golang:1.19.3 as builder
 
 ENV GO111MODULE on
 ENV GOPROXY https://goproxy.cn,direct
