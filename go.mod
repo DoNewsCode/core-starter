@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/DoNewsCode/core v0.12.3
 	github.com/gorilla/mux v1.8.0
-	github.com/spf13/cobra v1.6.1
+	github.com/spf13/cobra v1.8.1
 )
 
 require (
@@ -19,7 +19,7 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/gorilla/handlers v1.5.1 // indirect
 	github.com/heptiolabs/healthcheck v0.0.0-20180807145615-6ff867650f40 // indirect
-	github.com/inconshreveable/mousetrap v1.0.1 // indirect
+	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/knadh/koanf v1.4.0 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
