@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/DoNewsCode/core v0.12.3
-	github.com/gorilla/mux v1.8.0
+	github.com/gorilla/mux v1.8.1
 	github.com/spf13/cobra v1.8.1
 )
 
